@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans";
+}
+.navbar{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    padding: 0rem 11.5rem;
+    gap: 4rem;
+    height: 60px;
+}
+.nav_icons >ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight:550 ;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #3F3844;
+}
+a:hover{
+    transition: all .3s ease;
+    color: #FF5733;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.logo >img{
+    width: 50px;
+}
+
+/* ===================
+        Main
+   =================== */
+
+.gray_div{
+    position: absolute;
+    width: 100%;
+    /* z-index: -1; */
+    height: 200px;
+    background-color: #eaeaea;
+    
+}
+
+/* ===================
+    Hero Section Top
+   =================== */
+.top{
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    background-color: #021021;
+}
+.top >ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #3c3c3c; */
+    padding: 1rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #3F3844;
+}
+.top > ul > .orange{
+
+    padding: .8rem 1.5rem ;
+    background-color: #FF5733;
+    border: none;
+    border-radius:1.5px ;
+}
+
+.top_color{
+    color: #b7b3b3;
+}
+
+/* ===================
+    Hero Section Mid
+   =================== */
+
+/* ===================
+    Hero Section Mid Top Left
+   =================== */
+   main{
+    background-color: rgb(246, 246, 246);
+    width: 100%;
+    position: static;
+    height: 215vh;
+}
+.hero{
+    margin:0rem 10rem;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #a4a3a3;
+    border: 2px solid white;
+    position: relative;
+    
+    padding-bottom: 7rem;
+    transform: translateY(850px);
+    animation: start_hero .8s  ease-in-out forwards;
+    -webkit-transform: translateY(850px);
+    -moz-transform: translateY(850px);
+    -ms-transform: translateY(850px);
+    -o-transform: translateY(850px);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-animation: start_hero .8s  ease-in-out forwards;
+}
+.mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1.4rem;
+    width: 100%;
+    position: relative;
+    margin-top: 4rem;
+    gap: 4rem;
+
+}
+.mid>.mid_top{
+    display: flex;
+    gap: 1rem;
+    /* box-shadow: 1px 2px #021021; */
+    
+    justify-content: space-between;
+}
+.mid>.mid_top>.left{
+    padding: 0rem 0rem 0rem 5rem;
+}
+.mid >.mid_top>.left>.left_1st>h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #3F3844;
+    margin-bottom: .5rem;
+}
+.mid >.mid_top>.left>.left_1st>p{
+    font-size: 1.2rem;
+    color: #3f3844e9;
+    line-height: 2.3rem;
+}
+
+/* ===================
+    Hero Section Mid Top Right
+   =================== */
+
+.mid>.mid_top>.right{
+    position: relative;
+}
+.mid>.mid_top>.right>.video{
+    position: relative;
+    width: 320px;
+    height: 200px;
+    z-index: 5;
+    background-color: #dadada;
+    overflow: hidden;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.mid>.mid_top>.right>.video>video{
+    position: absolute;
+    top: -50%;
+    right: 1%;
+    width: 315px;
+    object-fit: cover;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+/* ==============================
+    Hero Section Mid Bottom Right
+   ============================== */
+
+
+.mid_bottom{
+    margin: 0rem 0rem 0rem 5rem;
+    
+}
+.mid_bottom>.table{
+    border: 1px solid #3f384432;
+    border-radius: 4px;
+    /*padding: ;
+    */width: 70%;
+    padding: 0rem 1.4rem;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+table>caption{
+    margin: 1.5rem 0rem 1rem 0rem;
+    color: #3F3844;
+    font-size: 2.1rem;
+    font-weight: 600;
+    /* background-color: black; */
+    width: 100%;
+}
+table>thead>tr>th{
+    padding-bottom: 1rem;
+    /* border-spacing: 100px; */
+    color: #9a9595;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0px 1px 0px  #dadada;
+}
+
+
+table {
+    /* border-collapse: separate;  */
+    border-spacing: 10px;
+    text-align: center;
+    width: 100%; 
+    
+}
+table > tbody > tr>td  {
+    /* background-color: #021021; */
+    /* height: 4.5rem; */
+    padding: 1rem 3rem;
+    font-weight: 550;
+    box-shadow: 0px 1px 0px  #dadada;
+}
+
+/* ==============================
+    Hero Section  Bottom 
+   ============================== */
+
+.bottom{
+    padding: 0rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    color: #3F3844;
+    padding-bottom: 2rem;
+}
+.bottom_right>img{
+    width: 50px;
+    cursor: pointer;
+    object-fit: cover;
+}
+.bottom_right{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+}
+.bottom_right>ul{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.bottom_right>ul>li{
+    color: #3F3844;
+    font-weight: 550;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.bottom_right>ul>li:hover{
+    color: #a4a3a3;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.bottom_left{
+    font-size:1rem  ;
+    font-weight: 550;
+    cursor: pointer;
+}
+.bottom_left:hover{
+    color: #a4a3a3;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* ==============================
+    Footer
+   ============================== */
+
+.footer{
+    padding: 0rem 12rem;
+    background-color:#eaeaea ;
+    width: 100%;
+    /* height: 400px; */
+
+}
+.row_1st{
+    /* padding-top: 4rem; */
+    display: flex;
+    /* justify-content:; */ 
+    align-items: start ;
+    gap: 4rem;
+    padding: 4rem 2rem 1rem 2rem;
+}
+.row_2nd{
+    display: flex;
+    align-items: start ;
+    gap: 4rem;
+    padding: 0rem 2rem 4rem 2rem;
+}
+.icons>ul>li{
+    font-size: 1rem;
+    margin-bottom: .7rem;
+    cursor: pointer;
+}
+.icons>ul>li:hover{
+    color: #a4a3a3c4;
+    transition: all .4s ease;
+    margin-bottom: .7rem;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.credits{
+    /* flex-grow: 1; */
+    flex-basis: 60%;
+}
+.credits >h4{
+    margin-bottom: .8rem;
+}
+.credits>ul>li >h2:hover{
+    color: #a4a3a3c4;
+    transition: all .5s ease;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+}
+.credits>ul>li >h2{
+    color: #3F3844;
+    font-size: 2.2rem;
+    margin-bottom: .1rem;
+}
+.credits>ul>li >h5{
+    color: #3F3844;
+    font-size: .8rem;
+}
+.contact{
+    flex-basis: 10%;
+}
+.contact>h6{
+    margin-top: .8rem;
+    font-size: 14px;
+    color: #3F3844;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: .5px;
+
+}
+.contact>h6:hover{
+    color: #a4a3a3c4;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.socialize>ul{
+    margin-top: .8rem;
+}
+.socialize>ul>li{
+    margin-bottom: .1rem;
+    color: #3F3844;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 550;
+}
+.socialize>ul>li:hover{
+    color:#a4a3a3c4 ;
+    transition: all .4s ease;
+}
+h4{
+    color: #a4a3a3c4;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 550;
+    /* letter-spacing: 2px; */
+}
+.credits>p{
+    width: 100%;
+    line-height: 1.9rem;
+    color: #021021;
+    font-size: 1.1rem;
+}
+@keyframes start_hero {
+    to{
+        transform: translateY(150px);
+        -webkit-transform: translateY(150px);
+        -moz-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+        -o-transform: translateY(150px);
+}
+}
+
+
