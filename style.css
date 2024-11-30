@@ -6,17 +6,20 @@
     box-sizing: border-box;
     font-family: "Parkinsans";
 }
+html{
+    font-size: 16px;
+}
 .navbar{
     display: flex;
-    /* justify-content: ; */
+    justify-content: space-evenly;
     align-items: center;
-    padding: 0rem 11.5rem;
+    /* padding: 0remrem; */
     gap: 4rem;
     height: 60px;
 }
 .nav_icons >ul{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 3rem;
 
@@ -28,7 +31,7 @@ a{
     text-decoration: none;
     font-weight:550 ;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 1.1rem;
     color: #3F3844;
 }
 a:hover{
@@ -59,12 +62,7 @@ a:hover{
 /* ===================
     Hero Section Top
    =================== */
-.top{
-    position: sticky;
-    z-index: 10;
-    top: 0px;
-    background-color: #021021;
-}
+
 .top >ul{
     display: flex;
     justify-content: space-evenly;
@@ -201,7 +199,8 @@ a:hover{
     border: 1px solid #3f384432;
     border-radius: 4px;
     /*padding: ;
-    */width: 70%;
+    */width: 
+    50vw;
     padding: 0rem 1.4rem;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -236,7 +235,7 @@ table {
 table > tbody > tr>td  {
     /* background-color: #021021; */
     /* height: 4.5rem; */
-    padding: 1rem 3rem;
+    padding: 1vw 1vw;
     font-weight: 550;
     box-shadow: 0px 1px 0px  #dadada;
 }
@@ -417,5 +416,24 @@ h4{
         -o-transform: translateY(150px);
 }
 }
+
+@media(max-width:1024px) {
+    html{
+        font-size: 10px;
+    }
+    .navbar{
+        gap: 2rem;
+    }
+    .nav_icons >ul{
+      
+        gap: 2.5rem;
+    
+    }
+    a{
+        font-size: 1.5rem;
+    }
+}
+
+
 
 
